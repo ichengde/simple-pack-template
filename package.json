@@ -17,6 +17,15 @@
     "debug": "^3.1.0",
     "es6-promise": "^4.2.4"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format && npm run lint"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "devDependencies": {
     "babel-core": "^6.4.0",
     "babel-loader": "^7.0.0",
